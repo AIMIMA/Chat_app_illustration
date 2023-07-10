@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./dist/all.min.css">
+  <link rel="stylesheet" href="./dist/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Chat_app_illustration</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+
+<body>
+  <div
+    class="wrapper overflow-hidden min-h-screen relative obj-l obj-r center bg-white gap-40 max-[991px]:flex-col p-5 max-[991px]:py-40">
+    <div class="app relative z-50 w-72 shadow-main rounded-3xl outline-[18px] outline-white outline">
+      <div
+        class="app-heading text-white absolute w-full rounded-t-3xl rounded-b-[10px] notch p-2.5 pt-11 pb-2.5 gradient-rtl between shadow-md">
+        <div class="content-l flex items-center gap-2.5">
+          <i class="cusor-pointer fa-solid fa-angle-left"></i>
+          <img class="cusor-pointer rounded-full border-2 border-solid border-white w-9 h-9" src="./images/avatar.jpg">
+          <div class="head">
+            <h2 class="cusor-pointer font-bold text-[15px]">Samuel Green</h2>
+            <span class="block text-subHead text-xs">Available to Walk</span>
+          </div>
+        </div>
+        <div class="content-r">
+          <i class="cusor-pointer fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </div>
+      <div class="appbody rounded-[2.5em] p-4 px-2.5 pt-[107px] flex flex-col gap-2.5 bg-appBg">
+        <div class="cusor-pointer chat-l gradient-lite">
+          That sounds great. I’d be happy with that.
+        </div>
+        <div class="cusor-pointer chat-l gradient-lite">
+          Could you send over some pictures of your dog, please?
+        </div>
+        <div class="img flex w-fit gap-2.5 items-center self-end">
+          <img src="./images/dog-image-1.jpg" alt="" class="cusor-pointer rounded-xl w-12">
+          <img src="./images/dog-image-2.jpg" alt="" class="cusor-pointer rounded-xl w-12">
+          <img src="./images/dog-image-3.jpg" alt="" class="cusor-pointer rounded-xl w-12">
+        </div>
+        <div class="cusor-pointer chat-r">
+          Here are a few pictures. She’s a happy girl!
+        </div>
+        <div class="cusor-pointer chat-r">
+          Can you make it?
+        </div>
+        <div class="cusor-pointer chat-l gradient-lite">
+          She looks so happy! The time we discussed works. How long shall I take her out for?
+        </div>
+        <div class="cusor-pointer flex items-center gradient-ltr chat-l max-w-fit gap-2.5 text-white">
+          <div class="cusor-pointer bg-transparent outline-radOut outline p-2 outline-4 rounded-full"></div>
+          30 minute walk
+          <span class="text-[16px] ml-10">$29</span>
+        </div>
+        <div class="flex items-center gradient-ltr chat-l max-w-fit gap-2.5 text-white">
+          <div class="bg-transparent outline-radOut outline p-2 outline-4 rounded-full"></div>
+          1 hour walk
+          <span class="text-[16px] ml-10">$49</span>
+        </div>
+        <div class="message relative w-full rounded-3xl bg-white py-2.5 px-5 btn">
+          <input
+            class="placeholder-placeH focus:outline-none focus:placeholder:opacity-0 placeholder:transition-all placeholder:duration-300"
+            type="text" placeholder="Type a message…">
+        </div>
+      </div>
+    </div>
+
+    <div class="max-[991px]:text-center">
+      <h1 class="text-mainH font-bold text-3xl"> Simple booking</h1>
+      <p class="max-w-sm text-para mt-8">Stay in touch with our dog walkers through the chat interface. This makes it
+        easy to
+        discuss arrangements
+        and make bookings. Once the walk has been completed you can rate your walker and book again all through the
+        chat.
+      <p>
+    </div>
+  </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>

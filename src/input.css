@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+  }
+}
+
+@layer components {
+  .center {
+    @apply flex justify-center items-center;
+  }
+
+  .between {
+    @apply flex justify-between items-center;
+  }
+
+  .gradient-ltr {
+    @apply bg-gradient-to-r from-grad-500 to-grad-900;
+  }
+
+  .gradient-rtl {
+    @apply bg-gradient-to-l from-grad-500 to-grad-900;
+  }
+
+  .gradient-ttb {
+    @apply bg-gradient-to-b from-grad-500 to-grad-900;
+  }
+
+  .gradient-lite {
+    @apply bg-gradient-to-r from-grad-100 to-grad-200;
+  }
+
+  .gradient-lite-bbt {
+    @apply bg-gradient-to-r from-grad-100 to-grad-200;
+  }
+
+  .obj-l {
+    @apply before:content-[''] before:absolute before:gradient-ttb before:rounded-b-full before:top-0 before:left-0 before:-translate-x-1/2 before:w-[50vw] before:h-[80vh];
+  }
+
+  .obj-r {
+    @apply after:content-[''] after:absolute after:gradient-lite-bbt after:rounded-t-full after:bottom-0 after:right-0 after:translate-x-1/2 after:w-[50vw] after:h-[80vh];
+  }
+
+  .notch {
+    @apply before:content-[''] before:absolute before:bg-white before:rounded-b-[24px] before:top-[-1px] before:left-1/2 before:-translate-x-1/2 before:w-[55%] before:h-7;
+  }
+
+  .chat-r {
+    @apply self-end bg-white text-chatR w-fit max-w-[155px] p-2.5 rounded-[15px] rounded-br-none text-[0.6em] shadow-md;
+  }
+
+  .chat-l {
+    @apply text-chatL w-fit max-w-[155px] p-2.5 rounded-[15px] rounded-bl-none text-[0.6em];
+  }
+
+  .font {
+    font: var(--fa-font-solid);
+  }
+
+  .btn {
+    @apply before:content-['\f105'] before:absolute before:font before:center before:bg-subBg before:text-white before:rounded-full before:w-9 before:h-9 before:text-[1.5em] before:right-2 before:top-1/2 before:-translate-y-1/2 before:cursor-pointer;
+  }
+}
